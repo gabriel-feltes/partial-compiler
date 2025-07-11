@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/partial-compiler/static/css/main.b96c2791.css",
-    "main.js": "/partial-compiler/static/js/main.27d59ad3.js",
+    "main.js": "/partial-compiler/static/js/main.8b805775.js",
     "index.html": "/partial-compiler/index.html",
     "main.b96c2791.css.map": "/partial-compiler/static/css/main.b96c2791.css.map",
-    "main.27d59ad3.js.map": "/partial-compiler/static/js/main.27d59ad3.js.map"
+    "main.8b805775.js.map": "/partial-compiler/static/js/main.8b805775.js.map"
   },
   "entrypoints": [
     "static/css/main.b96c2791.css",
-    "static/js/main.27d59ad3.js"
+    "static/js/main.8b805775.js"
   ]
 }
