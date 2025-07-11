@@ -4,11 +4,8 @@ Este projeto é um compilador parcial desenvolvido como parte de um trabalho aca
 
 >[!NOTE]
 > Acesse a aplicação publicada em [GitHub Pages](https://gabrielfeltes.github.io/partial-compiler/) e veja o compilador em ação!
-
 > A aplicação permite que você escreva código fonte em C, visualize a árvore sintática abstrata, a tabela de símbolos e os tokens gerados, além de exibir erros semânticos.
-
 > A aplicação é responsiva e funciona bem em dispositivos móveis. Ela permite fazer download da árvore sintática abstrata em formato PNG, bem como da tabela de símbolos e dos tokens em formato JSON.
-
 > O compilador ainda é simples e não possui todas as funcionalidades de um compilador completo, mas já implementa a análise léxica e sintática, além de exibir erros semânticos.
 
 ## Estrutura do Sistema
