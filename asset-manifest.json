@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/partial-compiler/static/css/main.36a676b3.css",
+    "main.js": "/partial-compiler/static/js/main.ec5d3502.js",
+    "index.html": "/partial-compiler/index.html",
+    "main.36a676b3.css.map": "/partial-compiler/static/css/main.36a676b3.css.map",
+    "main.ec5d3502.js.map": "/partial-compiler/static/js/main.ec5d3502.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36a676b3.css",
+    "static/js/main.ec5d3502.js"
+  ]
+}
