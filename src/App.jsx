@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import CodeEditor from './components/CodeEditor';
 import TokensOutput from './components/TokensOutput';
 import ASTOutput from './components/ASTOutput';
@@ -40,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter basename={"partial-compiler"}>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -93,7 +93,7 @@ const App = () => {
         <Route path="/ast" element={<FullScreenAST />} />
         <Route path="/symbol-table" element={<FullScreenSymbolTable />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
