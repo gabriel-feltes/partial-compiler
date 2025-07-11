@@ -40,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"partial-compiler"}>
       <Routes>
         <Route
           path="/"

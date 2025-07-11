@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Partial Compiler
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um compilador parcial desenvolvido como parte de um trabalho acadêmico. Ele possui uma interface web construída com React para facilitar a interação com o usuário.
 
-## Available Scripts
+## Estrutura do Sistema
 
-In the project directory, you can run:
+```bash
+.
+├── package.json                      // Configuração do projeto e dependências
+├── package-lock.json
+├── postcss.config.js                 // Configuração do PostCSS
+├── public
+│   ├── favicon.ico
+│   ├── index.html                    // Página HTML principal
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json                 // Configuração do manifesto da aplicação web
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── App.jsx                       // Página principal da aplicação React
+│   ├── App.test.js
+│   ├── components
+│   │   ├── ASTOutput.jsx             // Exibe a árvore sintática abstrata na página principal
+│   │   ├── CodeEditor.jsx            // Editor de código fonte C com suporte a destaque de sintaxe
+│   │   ├── FullScreenAST.jsx         // Permite visualizar a árvore sintática abstrata em tela cheia e exportar como PNG
+│   │   ├── FullScreenSymbolTable.jsx // Mostra a tabela de símbolos em tela cheia
+│   │   ├── FullScreenTokens.jsx      // Mostra os tokens em tela cheia
+│   │   ├── SemanticOutput.jsx        // Exibe os erros semânticos na página principal
+│   │   ├── SymbolTableOutput.jsx     // Exibe a tabela de símbolos na página principal
+│   │   └── TokensOutput.jsx          // Exibe os tokens na página principal
+│   ├── index.css
+│   ├── index.jsx                     // Ponto de entrada da aplicação React
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   ├── styles.css                    // Estilos globais da aplicação e Tailwind CSS
+│   └── utils
+│       └── Compiler.js               // Implementação do compilador parcial
+└── tailwind.config.js                // Configuração do Tailwind CSS
+```
+
+## Funcionalidades
+
+- **Editor de Código**: Permite ao usuário digitar ou colar o código fonte.
+- **Compilação**: O código é analisado pelo compilador parcial (léxico e sintático).
+- **Exibição de Erros**: Mostra mensagens de erro detalhadas caso o código não seja válido.
+- **Saída**: Exibe o resultado da compilação ou análise.
+- **Interface Intuitiva**: Navegação simples e responsiva.
+
+## Como Rodar o Projeto Localmente
+
+No diretório do projeto, execute:
+
+### `npm install`
+
+Instala as dependências necessárias.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Roda a aplicação em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Gera uma versão otimizada para produção na pasta `build`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Faz o deploy da aplicação para o GitHub Pages. Edite o arquivo `package.json` para definir o campo `homepage` com a URL do seu repositório.
 
-### `npm run eject`
+## Tecnologias Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- JavaScript
+- HTML/CSS
+- Tailwind CSS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuição
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests. O foco se encontra no script `src/utils/Compiler.js`, onde a lógica do compilador parcial é implementada.

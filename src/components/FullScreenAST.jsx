@@ -121,12 +121,12 @@ const FullScreenAST = () => {
                             {
                                 selector: 'node',
                                 style: {
-                                    'background-color': '#4a5568',
+                                    'background-color': '#000000',
                                     'label': 'data(label)',
                                     'text-valign': 'center',
-                                    'color': '#e2e8f0',
+                                    'color': '#ffffff',
                                     'text-outline-width': 1,
-                                    'text-outline-color': '#4a5568',
+                                    'text-outline-color': '#000000',
                                     'shape': 'square',
                                     'border-width': 1,
                                     'border-color': '#718096',
@@ -144,8 +144,8 @@ const FullScreenAST = () => {
                                 selector: 'edge',
                                 style: {
                                     'width': 1.5,
-                                    'line-color': '#a0aec0',
-                                    'target-arrow-color': '#a0aec0',
+                                    'line-color': '#ff0000',
+                                    'target-arrow-color': '#ff0000',
                                     'target-arrow-shape': 'triangle',
                                     'curve-style': 'bezier'
                                 }
